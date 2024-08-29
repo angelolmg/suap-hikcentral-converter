@@ -28,9 +28,13 @@ Antes de começar, certifique-se de ter o Python instalado na sua máquina. Este
 
 ### Como usar
 
-1. **Coloque o arquivo de entrada** no mesmo diretório do script. O arquivo pode estar nos formatos `.xls`, `.xlsx` ou `.csv`.
+1. **Obtenha a planilha via SUAP** em https://suap.ifrn.edu.br/admin/edu/aluno/
 
-2. **Execute o script**:
+	![suap](./imagens/img1.png)
+
+2. **Coloque o arquivo de entrada** no mesmo diretório do script. O arquivo pode estar nos formatos `.xls`, `.xlsx` ou `.csv`.
+
+3. **Execute o script**:
 
    ```bash
    python script.py
@@ -38,7 +42,9 @@ Antes de começar, certifique-se de ter o Python instalado na sua máquina. Este
 
    O script irá procurar pelo primeiro arquivo `.xls`, `.xlsx`, ou `.csv` no diretório atual e criar um novo arquivo `.xlsx` com o nome modificado, adicionando `Modificado` ao nome original.
 
-3. **Verifique a saída**:
+	**OBS**: Lembre de alterar os valores no script como necessário antes de executar. Ex.: Nome do departamento, tempo de vigência, etc.
+
+4. **Verifique a saída**:
 
    O arquivo convertido será salvo no mesmo diretório, com as formatações ajustadas para upload no HikCentral Professional. A estrutura do arquivo de saída incluirá as seguintes colunas:
 
@@ -51,6 +57,11 @@ Antes de começar, certifique-se de ter o Python instalado na sua máquina. Este
    - **E-mail**: E-mail Pessoal.
    - **Matricula**: Campo deixado em branco.
 
+5. **Carregue a planilha no HikCentral** em Pessoas > Importar > Importar informação da pessoa por Excel.
+
+	![hikcentral](./imagens/img2.png)
+
+
 ### Dicas
 
 - Certifique-se de que o arquivo de entrada contém as colunas necessárias conforme esperado pelo script (`#`, `Nome`, `Matrícula`, `Curso`, `Campus`, `Polo`, `Situação`, `E-mail Acadêmico`, `E-mail Pessoal`, `Ano/Periodo Letivo`).
@@ -62,4 +73,4 @@ Contribuições são bem-vindas! Se você encontrar um problema ou tiver uma sug
 
 ### Licença
 
-Este projeto está licenciado sob a licença MIT.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
